@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e8f5e9, #f1f8f4);
+    color: #2e3d33;
+}
+
+/* NAVBAR */
+nav {
+    background: linear-gradient(90deg, #2e7d5b, #5fa58a);
+    padding: 18px 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: 0 10px 25px rgba(46,125,91,0.3);
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+nav a::after {
+    content: '❀';
+    position: absolute;
+    opacity: 0;
+    left: 50%;
+    bottom: -18px;
+    transform: translateX(-50%);
+    font-size: 12px;
+    transition: opacity 0.3s ease;
+}
+
+nav a:hover::after {
+    opacity: 1;
+}
+
+/* HEADER / HERO */
+header {
+    text-align: center;
+    padding: 110px 20px 70px;
+    position: relative;
+}
+
+header::before {
+    content: "❀ ❀ ❀";
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #7bbf9c;
+    font-size: 14px;
+    letter-spacing: 12px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #2f6f52;
+    margin-bottom: 15px;
+}
+
+header p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 1.05rem;
+    color: #4f6f5e;
+    line-height: 1.8;
+}
+
+/* CONTENT CARD */
+.content {
+    max-width: 950px;
+    margin: auto;
+    background: linear-gradient(135deg, #ffffff, #ecf7f1);
+    padding: 50px;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(46,125,91,0.15);
+    position: relative;
+}
+
+.content::after {
+    content: "✿";
+    position: absolute;
+    top: -15px;
+    right: 25px;
+    background: #dff3ea;
+    padding: 8px 12px;
+    border-radius: 50%;
+    color: #2e7d5b;
+    font-size: 14px;
+}
+
+.content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.9rem;
+    color: #2e7d5b;
+    margin-bottom: 25px;
+}
+
+.content p {
+    line-height: 1.9;
+    text-align: justify;
+    color: #3e5f50;
+    margin-bottom: 18px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 14px;
+    color: #4e7a66;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    .content {
+        padding: 30px;
+    }
+}
+
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 80px 20px 40px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    color: #2e7d5b;
+    font-size: 2.5rem;
+}
+
+header p {
+    color: #4f6f5e;
+}
+
+/* GALERI PRODUK */
+.galeri-produk {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap; /* otomatis turun kalau layar kecil */
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ITEM PRODUK */
+.item {
+    background: linear-gradient(135deg, #ffffff, #ecf7f1);
+    border-radius: 22px;
+    padding: 20px;
+    width: 230px;
+    box-shadow: 0 15px 35px rgba(46,125,91,0.18);
+    text-align: center;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.item::before {
+    content: "🌿";
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    background: #dff3ea;
+    padding: 6px 10px;
+    border-radius: 50%;
+}
+
+.item:hover {
+    transform: translateY(-8px);
+}
+
+/* GAMBAR */
+.item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 15px;
+}
+
+/* JUDUL */
+.item h3 {
+    font-family: 'Playfair Display', serif;
+    color: #2e7d5b;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+/* HARGA */
+.harga {
+    color: #5fa58a;
+    font-weight: 600;
+}
+
+.deskripsi {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #3e5f50;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e8f5e9, #f1f8f4);
+    color: #2e3d33;
+    line-height: 1.8;
+}
+
+/* NAVBAR */
+nav {
+    background: linear-gradient(90deg, #2e7d5b, #5fa58a);
+    padding: 18px 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: 0 10px 25px rgba(46,125,91,0.3);
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+nav a::after {
+    content: '❀';
+    position: absolute;
+    opacity: 0;
+    left: 50%;
+    bottom: -18px;
+    transform: translateX(-50%);
+    font-size: 12px;
+    transition: opacity 0.3s ease;
+}
+
+nav a:hover::after {
+    opacity: 1;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 80px 20px 60px;
+    position: relative;
+}
+
+header::before {
+    content: "❀ ❀ ❀";
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #7bbf9c;
+    font-size: 14px;
+    letter-spacing: 12px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #2f6f52;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 950px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* ARTIKEL / BEDAH BUKU */
+.artikel {
+    background: linear-gradient(135deg, #ffffff, #ecf7f1);
+    padding: 45px;
+    margin-bottom: 40px;
+    border-radius: 26px;
+    box-shadow: 0 20px 40px rgba(46,125,91,0.15);
+    position: relative;
+}
+
+.artikel::after {
+    content: "✿";
+    position: absolute;
+    top: -15px;
+    right: 25px;
+    background: #dff3ea;
+    padding: 8px 12px;
+    border-radius: 50%;
+    color: #2e7d5b;
+    font-size: 14px;
+}
+
+/* JUDUL BUKU */
+.artikel h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #2e7d5b;
+    margin-bottom: 10px;
+}
+
+.penulis {
+    font-size: 0.9rem;
+    color: #5f8f78;
+    font-style: italic;
+    margin-bottom: 18px;
+}
+
+/* GAMBAR SAMPUL */
+.sampul {
+    width: 220px;
+    display: block;
+    margin: 25px auto;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(46,125,91,0.25);
+    transition: transform 0.3s ease;
+}
+
+.sampul:hover {
+    transform: scale(1.05);
+}
+
+/* PARAGRAF */
+.artikel p {
+    color: #3e5f50;
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+/* QUOTE */
+blockquote {
+    background: #e1f3ea;
+    border-left: 6px solid #2e7d5b;
+    padding: 18px 24px;
+    margin: 25px 0;
+    border-radius: 14px;
+    font-style: italic;
+    color: #2f6f52;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 14px;
+    color: #4e7a66;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    .artikel {
+        padding: 30px;
+    }
+
+    .sampul {
+        width: 180px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 15px;
+    }
+}
+   
+
+/* FORM TESTIMONI */
+.formulir {
+    max-width: 720px;
+    margin: 60px auto;
+    background: linear-gradient(135deg, #ffffff, #ecf7f1);
+    padding: 45px 50px;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(46,125,91,0.15);
+    position: relative;
+}
+
+.formulir::before {
+    content: "✿";
+    position: absolute;
+    top: -14px;
+    left: 30px;
+    background: #dff3ea;
+    padding: 8px 12px;
+    border-radius: 50%;
+    color: #2e7d5b;
+    font-size: 14px;
+}
+
+.formulir h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.9rem;
+    color: #2e7d5b;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* LABEL & INPUT */
+.formulir label {
+    display: block;
+    font-size: 14px;
+    color: #3e5f50;
+    margin-bottom: 6px;
+    margin-top: 18px;
+}
+
+.formulir input,
+.formulir textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid #cfe6da;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    background-color: #f9fdfb;
+    transition: all 0.3s ease;
+}
+
+.formulir input:focus,
+.formulir textarea:focus {
+    outline: none;
+    border-color: #5fa58a;
+    box-shadow: 0 0 0 3px rgba(95,165,138,0.2);
+}
+
+/* BUTTON */
+.formulir button {
+    margin-top: 30px;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #2e7d5b, #5fa58a);
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.formulir button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(46,125,91,0.35);
+}
+
+/* FOOTER (konsisten warna) */
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 14px;
+    color: #4e7a66;
+}
