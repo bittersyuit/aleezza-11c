@@ -493,3 +493,103 @@ footer {
     font-size: 14px;
     color: #4e7a66;
 }
+
+.kontak-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.kontak-section h2 {
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.kontak-section p {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.kontak-section form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.kontak-section input,
+.kontak-section textarea {
+    padding: 12px;
+    border: 1px solid #2e7d32;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.kontak-section textarea {
+    height: 120px;
+    resize: none;
+}
+
+.kontak-section button {
+    padding: 12px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.kontak-section button:hover {
+    background-color: #1b5e20;
+}
+
+.event-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.event-section h2 {
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.event-section p {
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.event-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.event-card {
+    background-color: #ffffff;
+    border: 2px solid #2e7d32;
+    border-radius: 12px;
+    padding: 25px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.event-card h3 {
+    color: #1b5e20;
+    margin-bottom: 15px;
+}
+
+.tanggal {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #2e7d32;
+}
