@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontak Kami</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Lexica Pustaka</h1>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="produk.html">Produk</a>
+        <a href="bedah-buku.html">Bedah Buku</a>
+        <a href="testimoni.html">Testimoni</a>
+        <a href="tampil-testimoni.html">Testimoni Pembeli</a>
+        <a href="kontak.html">Kontak</a>
+        <a href="event.html">Event</a>
+    </nav>
+</header>
+
+<section class="kontak-section">
+    <h2>Hubungi Kami</h2>
+    
+    <div class="info-toko">
+        <h3>Alamat Toko</h3>
+        <p>Jl. Pendidikan No. 123</p>
+        <p>Pekanbaru, Riau</p>
+        <p>Email: LexicaPustaka@gmail.com</p>
+        <p>Telepon: 0812-3456-7890</p>
+    </div>
+
+    <div class="form-kontak">
+        <h3>Kirim Pesan</h3>
+        <form id="formKontak">
+            <input type="text" id="nama" placeholder="Nama Lengkap" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="pesan" placeholder="Tulis pesan Anda..." required></textarea>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2025 Lexica Pustaka | All Rights Reserved</p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+    const form = document.getElementById("formKontak");
+
+    form.addEventListener("submit", function(e){
+        e.preventDefault();
+
+        const nama = document.getElementById("nama").value;
+        const email = document.getElementById("email").value;
+        const pesan = document.getElementById("pesan").value;
+
+        alert("Pesan berhasil dikirim!");
+        form.reset();
+    });
+
+});
+</script>
+
+</body>
+</html>
