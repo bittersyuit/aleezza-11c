@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontak Kami</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Lexica Pustaka</h1>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="produk.html">Produk</a>
+        <a href="bedah-buku.html">Bedah Buku</a>
+        <a href="testimoni.html">Testimoni</a>
+        <a href="tampil-testimoni.html">Testimoni Pembeli</a>
+        <a href="kontak.html">Kontak</a>
+        <a href="event.html">Event</a>
+    </nav>
+</header>
+
+<section class="kontak-section">
+    <h2>Hubungi Kami</h2>
+    <p>Silakan kirim pesan kepada kami jika ada pertanyaan, kritik, atau saran.</p>
+
+    <form id="formKontak">
+        <input type="text" id="nama" placeholder="Nama Lengkap" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <textarea id="pesan" placeholder="Tulis pesan Anda..." required></textarea>
+        <button type="submit">Kirim Pesan</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2025 Lexica Pustaka | All Rights Reserved</p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+    const form = document.getElementById("formKontak");
+
+    form.addEventListener("submit", function(e){
+        e.preventDefault();
+
+        const nama = document.getElementById("nama").value;
+        const email = document.getElementById("email").value;
+        const pesan = document.getElementById("pesan").value;
+
+        const dataBaru = { nama, email, pesan };
+
+        const kontakList = JSON.parse(localStorage.getItem("kontakList")) || [];
+
+        kontakList.push(dataBaru);
+
+        localStorage.setItem("kontakList", JSON.stringify(kontakList));
+
+        alert("Pesan berhasil dikirim!");
+
+        form.reset();
+    });
+
+});
+</script>
+
+</body>
+</html>
